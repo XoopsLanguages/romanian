@@ -1,0 +1,37 @@
+<div class="outer" id="help-template">
+<h1 class="head">Ajutor: Șabloane</h1>
+<h4 class="odd">Descriere</h4>
+<p class="even">
+        XOOPS permite o anumită separare între prezentarea efectivă a site-ului („<em>piele</em>” sau interfața utilizator) și codul care rulează în spate. Primul este gestionat de un mecanism sofisticat bazat pe teme grafice. O temă poate include, în forma sa de bază, HTML-ul esențial
+        șabloane care definesc interfața vizuală a site-ului, precum și foile de stil și imaginile necesare pentru a completa acea interfață vizuală. Temele sunt comutabile în interfața administrativă, așa că schimbarea întregului aspect al unui site XOOPS este doar o chestiune de schimbare a valorii unui
+        selector și făcând clic pe „Accept”. XOOPS oferă, de asemenea, administratorilor de site-uri posibilitatea de a permite utilizatorilor să aleagă dintre unele teme disponibile.<br/><br/>
+
+        În general, a <strong><em>tema</em></strong> este cadrul vizual de nivel înalt al unui site: tema definește, de exemplu, aspectul general al site-ului; pe de altă parte, de obicei nu definește distribuția specifică a conținutului în cadrul unui bloc. Aceasta se ocupă de a
+        entitate diferită numită a <em><strong>set de șabloane</strong></em>. Un set de șabloane<em> </em>este un ansamblu de șabloane HTML care definesc prezentarea conținutului în cadrul tuturor blocurilor care formează un site web XOOPS. Dacă vrem o metaforă mai clară pentru aceasta, am putea spune că tema este ca
+        arhitectul unei case, în timp ce setul de șabloane este ca decoratorul de interior. Primul stabilește pereții și definește distribuția generală, dar al doilea este cel care se ocupă de „<em>îmbrăcăminte</em>” acei pereți.<br/><br/>
+
+        Dacă tema activă este una simplă care include doar un fișier temă, fișiere CSS și unele imagini, XOOPS folosește setul de șablon implicit pentru a defini prezentarea blocurilor. Cu toate acestea, unele teme complexe sunt suficient de sofisticate pentru a include propriul set de șabloane. În acest caz, site-ul
+        administratorul trebuie să folosească interfața administrativă pentru a seta atât tema, cât și setul de șabloane. <br/><br/>
+
+        Cum este tema <em>magie</em> realizat? Adică, cum pot șabloanele HTML să includă conținut dinamic? Acest lucru se face nu cu oglinzi și fum, ci cu un motor inteligent de șablon numit
+        <strong><a href="https://www.smarty.net/" rel="external">Deștept</a></strong> care face funcția a ceea ce se numea înainte
+        <em><strong>interpolare variabilă</strong></em>. Exprimat într-un mod simplu, am putea spune că sistemul XOOPS folosește fișiere PHP pentru a deține logica modulelor (acces la baza de date, alocarea variabilelor, gestionarea drepturilor...), fișiere HTML cu variabile Smarty inserate pentru a gestiona
+        interfața vizuală reală și motorul Smarty pentru a insera valori și șiruri în locuri specifice din HTML care construiește paginile văzute de utilizatorul final. Una peste alta, ceea ce înseamnă asta pentru tine poate fi rezumat cu ușurință: datorită sistemului său de tematică, XOOPS le permite designerilor de site-uri să construiască mai multe
+        site-uri interesante și uimitoare din punct de vedere vizual, fără prea multe preocupări cu privire la ceea ce se întâmplă sub capotă.
+    </p>
+<h4 class="odd">Clonarea și descărcarea seturilor de șabloane</h4>
+<p class="even">
+        Dacă doriți să creați un set de șabloane personalizate, puteți face o copie a setului implicit (sau oricare altul) selectând „<em>clona</em>’ (vi se va solicita să dați un nume noului set). Spre deosebire de versiunea implicită, alte seturi de șabloane pot fi editate liber. De asemenea, puteți salva o copie a unui
+        șablonul setat pe disc selectând „
+Directorul<em>descărcare</em>’ sau eliminați-l cu „<em>șterge</em>’ link. De asemenea, este posibil să vedeți uneori un „<em>Generați</em>’ de lângă modulele noi pentru care șabloanele nu au fost încă create.
+    </p>
+<h4 class="odd">Editarea șabloanelor</h4>
+<p class="even">
+        Puteți vedea o listă completă a șabloanelor disponibile, răsfoind arborele directorului. Când selectați un șablon, XOOPS îl va deschide într-un editor unde îl puteți edita. <br/><br/>
+
+        În timp ce editați șabloane, trebuie să activați o preferință care actualizează automat fișierele șablon de modul .tpl dacă există fișiere mai noi în directorul teme/tema dvs./șabloane pentru tema curentă (Modul de sistem -&gt; Preferințe -&gt; Setări generale -&gt; Actualizare fișiere șablon de modul .tpl
+        din directorul teme/teme/șabloane? -&gt; ‘<em>Da</em>’). Acest lucru ar trebui să fie dezactivat odată ce site-ul devine public.<br/><br/>
+        Dacă greșiți accidental un șablon, nu uitați că puteți prelua un „<em>bine</em>’ copiați din setul de șabloane implicit. Dacă lucrați cu șabloane non-standard, poate fi o idee bună să salvați o copie pe disc înainte de a începe să le modificați.
+
+    </p>
+</div>

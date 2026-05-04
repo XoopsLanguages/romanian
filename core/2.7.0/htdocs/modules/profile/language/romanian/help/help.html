@@ -1,0 +1,50 @@
+<div class="outer" id="help-template">
+<h1 class="head">Ajutor: <a class="ui-corner-all tooltip" href="&lt;{$xoops_url}&gt;/modules/profile/admin/index.php" title="Back to the Administration of Profile"> Profil <img alt="Back to the Administration of Profile" src="&lt;{xoAdminIcons 'home.png'}&gt;"/></a></h1>
+ -----Conținut de ajutor ----------- 
+<h4 class="odd">DESCRIERE</h4>
+<p class="even">Modulul Profil este pentru gestionarea câmpurilor personalizate de profil de utilizator.</p>
+<h4 class="odd">INSTALARE/DEZINSTALARE</h4>
+<p>Nu sunt necesare măsuri speciale, urmați procesul standard de instalare – extrageți folderul /profile în directorul ../modules. Instalați modulul prin Admin -&gt; Modul de sistem -&gt; Module.</p>
+<p>Instrucțiuni detaliate despre instalarea modulelor sunt disponibile în <a href="https://www.gitbook.com/book/xoops/xoops-operations-guide/" target="_blank" title="XOOPS Operations Manual">Manual de operațiuni XOOPS</a> <br/><br/></p>
+<h4 class="odd">INSTRUCȚIUNI DE UTILIZARE</h4>
+<p class="even">Pentru a configura acest modul, trebuie să:</p>
+<ul>
+<li>Configurați preferințele pentru modul (vezi „Preferințe”) și opțional blocul Profil dacă intenționați să îl utilizați (vezi „Blocuri”).</li>
+<li>Editați categoriile existente sau adăugați altele noi.</li>
+<li>Editați câmpurile existente sau adăugați altele noi. Aici puteți specifica ce câmpuri vor fi vizibile în ce categorie și dacă vor fi vizibile în timpul înregistrării utilizatorului.</li>
+<li>Definiți ordinea pașilor de înregistrare.</li>
+<li>Și, în sfârșit, puteți seta permisiuni pentru câmpurile individuale - care sunt editabile, care pot fi căutate.<br/><br/></li>
+</ul>
+<h4 class="odd">Măsuri anti-spam</h4>
+<p class="even">Pentru a minimiza înregistrările spam, procedați în felul următor:</p>
+<ul>
+<li> accesați modulul Protector din Admin, mergeți la Preferințe, apoi în partea de jos, la această opțiune:
+
+            „Opriți spamul pe forum”
+            Verifică datele POST cu spammerii înregistrați în baza de date www.stopforumspam.com. <br/>
+            Setați-l la „Ban IP-ul (fără limită)”
+        </li>
+<br/>
+<li> în /class/captcha/config.php, asigurați-vă că modul este setat ca „text”:<br/><br/>
+<span style="font-style: italic;">     returnează $config = matrice(<br/>
+    'disabled' =&gt; false, // Dezactivează CAPTCHA<br/>
+    'mode' =&gt; 'text', // modul implicit, puteți alege 'text', 'image', 'recaptcha' (necesită cheia API)<br/>
+    'name' =&gt; 'xoopscaptcha', // nume captcha<br/>
+    'skipmember' =&gt; true, // Omite verificarea CAPTCHA pentru membri<br/>
+    'maxattempts' =&gt; 10, // Încercări maxime pentru fiecare sesiune<br/>
+    );</span></li>
+<br/>
+<li> În modulul Profil, accesați Admin și în pasul de bază situat la:<br/>
+
+            /modules/profile/admin/step.php?id=1<br/>
+
+            setați „Salvare după oprire” la „Nu”
+        </li>
+<br/><br/>
+<li> În Preferințe profil, setați opțiunea „Utilizați Captcha după al doilea pas de înregistrare” la „Da” (este valoarea implicită)</li>
+<br/>
+<ul>
+<h4 class="odd">TUTORIAL</h4>
+<p class="even">Tutorial va veni în curând.<br/></p>
+ -----Conținut de ajutor ----------- 
+</ul></ul></div>

@@ -1,0 +1,663 @@
+DIFERENȚE DE LIMBĂ
+=====================
+
+Mai jos sunt diferențele de limbă de la o versiune la versiunea următoare.
+
+================================
+2025/03/30: Versiunea 2.7.0-Betas (lansată anterior ca 2.5.12-Betas)
+================================
+/htdocs/modules/system/language/english/admin.php
+- adăugat define('_AM_SYSTEM_MENUS', 'Meniuri');
+- adăugat define('_AM_SYSTEM_MENUS_DESC', 'Gestionează meniurile de navigare a site-ului');
+
+/htdocs/modules/system/language/english/modinfo.php
+- adăugat define('_MI_SYSTEM_MENUS_ACTIVE', 'Activare sistem de meniu');
+- adăugat define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Activează sistemul de management al meniurilor încorporat pentru navigarea pe site');
+
+/htdocs/modules/system/language/english/admin/menus.php (FIȘIER NOU)
+- adăugat define('_AM_SYSTEM_MENUS_NAV_MAIN', 'Menu Manager');
+- adăugat define('_AM_SYSTEM_MENUS_NAV_BACK', 'Înapoi la lista de meniu');
+- ​​adăugat define('_AM_SYSTEM_MENUS_NAV_CATEGORY', 'Vizualizare categorie');
+- adăugat define('_AM_SYSTEM_MENUS_NAV_TIPS', '<strong>Sfaturi:</strong><ul>...');
+- adăugat define('_AM_SYSTEM_MENUS_ACTIVE', 'Activ');
+- adăugat define('_AM_SYSTEM_MENUS_ACTIVE_YES', 'Activat');
+- adăugat define('_AM_SYSTEM_MENUS_ACTIVE_NO', 'Dezactivat');
+- adăugat define('_AM_SYSTEM_MENUS_SAVED', 'Salvat cu succes');
+- adăugat define('_AM_SYSTEM_MENUS_DELETED', 'Șters cu succes');
+- adăugat define('_AM_SYSTEM_MENUS_ORDER_SAVED', 'Comanda salvată');
+- adăugat define('_AM_SYSTEM_MENUS_LISTCAT', 'List Categorii');
+- adăugat define('_AM_SYSTEM_MENUS_LISTITEM', 'Elemente din listă');
+- ​​adăugat define('_AM_SYSTEM_MENUS_ADDCAT', 'Adăugare categorie');
+- adăugat define('_AM_SYSTEM_MENUS_EDITCAT', 'Edit Category');
+- a adăugat define('_AM_SYSTEM_MENUS_DELCAT', 'Șterge categorie');
+- adăugat define('_AM_SYSTEM_MENUS_CATTITLE', 'Titlul categoriei');
+- adăugat define('_AM_SYSTEM_MENUS_CATTITLE_DESC', 'Un nume constant de limbă (de ex. MENUS_HOME) poate fi folosit aici, astfel încât eticheta să fie translabilă.');
+- adăugat define('_AM_SYSTEM_MENUS_CATPREFIX', 'Prefix (HTML)');
+- a adăugat define('_AM_SYSTEM_MENUS_CATPREFIX_DESC', 'Markup opțional afișat înaintea titlului categoriei, cum ar fi o pictogramă Font Awesome.');
+- adăugat define('_AM_SYSTEM_MENUS_CATSUFFIX', 'Sufix (HTML)');
+- adăugat define('_AM_SYSTEM_MENUS_CATSUFFIX_DESC', 'Markup opțional afișat după titlul categoriei.');
+- adăugat define('_AM_SYSTEM_MENUS_CATURL', 'URL');
+- adăugat define('_AM_SYSTEM_MENUS_CATURL_DESC', 'Link pentru categoria în sine, cum ar fi "index.php" sau un URL absolut.');
+- ​​adăugat define('_AM_SYSTEM_MENUS_CATTARGET', 'Link Target');
+- adăugat define('_AM_SYSTEM_MENUS_CATPOSITION', 'Poziţie');
+- adăugat define('_AM_SYSTEM_MENUS_DELCAT_CONFIRM', 'Sunteți sigur că doriți să ștergeți categoria „%s” și toate articolele ei?');
+- adăugat define('_AM_SYSTEM_MENUS_ADDITEM', 'Adăugare articol');
+- adăugat define('_AM_SYSTEM_MENUS_EDITITEM', 'Edit Item');
+- adăugat define('_AM_SYSTEM_MENUS_DELIITEM', 'Șterge articol');
+- ​​adăugat define('_AM_SYSTEM_MENUS_ITEMTITLE', 'Titlul articolului');
+- adăugat define('_AM_SYSTEM_MENUS_ITEMTITLE_DESC', 'Un nume constant de limbă poate fi folosit aici, astfel încât eticheta să fie translabilă.');
+- adăugat define('_AM_SYSTEM_MENUS_ITEMPREFIX', 'Prefix (HTML)');
+- ​​a adăugat define('_AM_SYSTEM_MENUS_ITEMPREFIX_DESC', 'Markup opțional afișat înaintea titlului articolului, cum ar fi o pictogramă Font Awesome.');
+- adăugat define('_AM_SYSTEM_MENUS_ITEMSUFFIX', 'Sufix (HTML)');
+- adăugat define('_AM_SYSTEM_MENUS_ITEMSUFFIX_DESC', 'Markup opțional afișat după titlul articolului. Acceptă substituentul <{xoInboxCount}>.');
+- adăugat define('_AM_SYSTEM_MENUS_ITEMURL', 'URL');
+- adăugat define('_AM_SYSTEM_MENUS_ITEMTARGET', 'Link Target');
+- adăugat define('_AM_SYSTEM_MENUS_ITEMPOSITION', 'Poziţie');
+- adăugat define('_AM_SYSTEM_MENUS_ITEMPARENT', 'Element părinte');
+- adăugat define('_AM_SYSTEM_MENUS_ITEMCATEGORY', 'Categorie');
+- ​​adăugat define('_AM_SYSTEM_MENUS_DELITEM_CONFIRM', 'Sunteți sigur că doriți să ștergeți elementul „%s” și sub-articolele sale?');
+- adăugat define('_AM_SYSTEM_MENUS_TARGET_SELF', 'Aceeași fereastră');
+- adăugat define('_AM_SYSTEM_MENUS_TARGET_BLANK', 'Fereastră nouă');
+- adăugat define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY', 'Grupuri care pot vedea această categorie');
+- adăugat define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY_DESC', 'Utilizatorii trebuie să aibă acces la categorie înainte ca oricare dintre articolele sale să devină vizibile.');
+- adăugat define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM', 'Grupuri care pot vedea acest articol');
+- adăugat define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM_DESC', 'Permisiunile articolului sunt verificate după permisiunea categoriei părinte.');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_CATNOTFOUND', 'Categoria nu a fost găsită');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_CATPROTECTED', 'Nu se poate șterge o categorie protejată');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_CATINACTIVE', 'Nu se poate activa: categoria este inactivă');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_ITEMNOTFOUND', 'Articol nu a fost găsit');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_ITEMPROTECTED', 'Nu se poate șterge un element protejat');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_ITEMPARENT', 'Articol părinte nevalid selectat');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_ITEMCYCLE', 'Nu se poate seta părintele: ar crea o referință circulară');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_ITEMDEPTH', 'Adancimea maxima de imbricare (3 nivele) depasita');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_PARENTINACTIVE', 'Nu se poate activa: elementul părinte este inactiv');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_NOITEMS', 'Nu există elemente de submeniu în această categorie.');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_ITEMEDIT', 'Activați acest articol înainte de a-l edita');
+- adăugat define('_AM_SYSTEM_MENUS_ERROR_ITEMDISABLE', 'Activați acest articol înainte de a-l șterge');
+- adăugat define('MENUS_HOME', 'Home');
+- adăugat define('MENUS_ADMIN', 'Administrare');
+- adăugat define('MENUS_ACCOUNT', 'Cont');
+- adăugat define('MENUS_ACCOUNT_EDIT', 'Edit Account');
+- adăugat define('MENUS_ACCOUNT_LOGIN', 'Login');
+- ​​adăugat define('MENUS_ACCOUNT_LOGOUT', 'Logout');
+- adăugat define('MENUS_ACCOUNT_REGISTER', 'Sign Up');
+- adăugat define('MENUS_ACCOUNT_MESSAGES', 'Messages');
+- adăugat define('MENUS_ACCOUNT_NOTIFICATIONS', 'Notificări');
+- adăugat define('MENUS_ACCOUNT_TOOLBAR', 'Toolbar');
+
+/htdocs/modules/system/constants.php
+- adăugat define('XOOPS_SYSTEM_MENUS', 19);
+
+/htdocs/modules/system/language/english/blocks.php
+-added define('_MB_SYSTEM_WAITING_CONTENT_DEPRECATED', „Blocarea „Conținut în așteptare” este depreciată de la XOOPS 2.5.11, vă rugăm să utilizați modulul de așteptare”);
+
+/htdocs/install/language/english/welcome.php
+- versiuni actualizate PHP și MySQL
+
+/htdocs/modules/pm/language/english/main.php
+- updated define('_PM_EMAIL_DESC', 'Dragă %s, acesta este un mesaj transferat din contul tău la ' . $GLOBALS['xoopsConfig']['sitename']);
+Linkul
+- updated define('_PM_EMAIL_DESC', 'Dragă %s, acesta este un mesaj transferat din contul tău la ' . $GLOBALS['xoopsConfig']['sitename']);
+
+/htdocs/language/english/user.php
+- definește actualizat('_US_SORRYNOTFOUND', 'Ne pare rău, nu au fost găsite informații de utilizator corespunzătoare.');
+- updated define('_US_SORRYNOTFOUND', 'Dacă un cont se potrivește cu informațiile furnizate, vom procesa solicitarea dvs. Dacă nu primiți un e-mail în scurt timp, vă rugăm să verificați folderul de spam sau să contactați administratorul site-ului.');
+
+- definește actualizat('_US_PWDMAILED', 'Parola pentru %s trimisă prin poștă.');
+- updated define('_US_PWDMAILED', 'Dacă există un cont pentru acest e-mail, veți primi instrucțiuni de resetare a parolei. Verificați folderul de spam dacă este necesar sau contactați administratorul site-ului.');
+
+- definește actualizat('_US_CONFMAIL', 'E-mail de confirmare pentru %s trimis prin poștă.');
+- updated define('_US_CONFMAIL', 'Dacă există un cont pentru acest e-mail, veți primi instrucțiuni de resetare a parolei. Verificați folderul de spam dacă este necesar sau contactați administratorul site-ului.');
+
+/htdocs/class/xoopseditor/tinymce5/language/english.php
+- redenumit _XOOPS_EDITOR_TINYMCE_LANGUAGE5 în _XOOPS_EDITOR_TINYMCE5_LANGUAGE
+
+/htdocs/modules/system/themes/transition/language/english/admin.php
+- redenumit _OXYGEN_Server_API în _OXYGEN_SERVER_API
+
+/htdocs/modules/system/language/english/admin/preferences.php.
+- adăugat define('_MD_AM_SENDMAIL_NOT_FOUND', 'Binarul Sendmail nu a fost găsit. Vă rugăm să verificați configurația serverului dvs.');
+- adăugat define('_MD_AM_SENDMAIL_HELP_MISSING_BIN', 'Nu a fost detectat niciun binar valid compatibil sendmail. Instalați un MTA (de exemplu, Postfix, msmtp) sau comutați la SMTP în Preferințe.');
+
+/htdocs/modules/system/language/english/admin/users.php
+- adăugat define('_AM_SYSTEM_USERS_UNKNOWN_GROUP', 'Grup necunoscut');
+
+/htdocs/modules/system/language/english/comment.php
+- adăugat define('_CM_ADDCOMMENT', 'Adaugă comentariu');
+
+
+/htdocs/install/language/english/install.php
+- adăugat define('_WEBSITE_NAME', 'XOOPS Site');
+- a adăugat define('_WEBSITE_SLOGAN', 'Doar foloseşte-l!');
+- adăugat define('_WEBSITE_META_KEYWORDS', 'xoops, cadru de aplicaţii web, cms, sistem de management al conţinutului');
+- adăugat define('_WEBSITE_FOOTER', "Proiectat de XOOPS © 2001-{X_YEAR} <a href='https://xoops.org' rel='external' title='The XOOPS Project'>The XOOPS Project</a>");
+- adăugat define('_WEBSITE_COPYRIGHT', 'Copyright © 2001-{X_YEAR}');
+- adăugat define('_WEBSITE_DESCRIPTION', 'XOOPS este un script de portal open source bazat pe obiecte dinamic, scris în PHP.');
+- adăugat define('_WEBSITE_CENSOR_REPLACE', 'OOPS');
+
+
+================================
+2023/10/01: versiunea 2.5.11-final
+================================
+/language/english/uploader.php
+-added define('_ER_UP_MODE_NOT_CHANGED', 'Fișier încărcat, dar nu a putut schimba modul');
+
+================================
+2023/10/01: Versiunea 2.5.11-RC3
+================================
+
+FIȘIERE SCHIMBATE:
+upgrade/language/english/upgrade.php
+upgrade/language/english/smarty3.php
+
+htdocs/class/xoopseditor/tinymce/language/english.php
+- adăugat define('_FAILGETIMG', 'Eșuat să obțineți imaginea %s');
+
+/htdocs/modules/system/language/english/modinfo.php
+- adăugat define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Dezactivare temporar');
+- adăugat define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'E-mail');
+- ​​adăugat define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Mesaj privat');
+
+/htdocs/modules/system/language/english/admin/preferences.php
+- adăugat define('_MD_AM_DEFAULT_NOTIFICATION_METHOD', 'Metoda implicită de notificare');
+- adăugat define('_MD_AM_DEFAULT_NOTIFICATION_METHOD_DESC', 'Pentru utilizatorii noi atunci când se abonează la notificări de la, de exemplu, un forum.');
+- adăugat define('_MD_AM_MODULEPREF',
+
+
+================================
+2023/03/19: Versiunea 2.5.11-RC1
+================================
+
+FIȘIERE SCHIMBATE:
+htdocs/language/english/global.php
+- adăugat define('_DB_QUERY_ERROR', 'Interogare eşuată! SQL: %s - Eroare: ');
+- adăugat define('_PRINT', 'Print');
+- adăugat define('_PDF', 'PDF');
+- ​​adăugat define('_OFF', 'Off');
+
+================================
+2021/09/02: Versiunea 2.5.11-Betas
+================================
+
+FIȘIERE SCHIMBATE:
+htdocs/language/english/admin.php
+- adăugat define('_AD_WARNING_NO_XML', 'Extensia PHP XML este necesară pentru această funcție.');
+
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- adăugat define('_AM_ADMINSTATS_LAST_MONTH', 'Ultima lună');
+- adăugat define('_AM_ADMINSTATS_LAST_WEEK', 'Săptămâna trecută');
+- adăugat define('_AM_ADMINSTATS_LAST_DAY', 'Ultima zi');
+- ​​adăugat define('_AM_ADMINSTATS_LAST_HOUR', 'Ultima oră');
+
+htdocs/language/english/global.php
+- adăugat define('_PRINT', 'Print');
+- adăugat define('_PDF', 'PDF');
+- ​​adăugat define('_OFF', 'Off');
+- definit definit('_ON', 'On'); //de la "pe"
+
+htdocs/language/english/global.php
+- ​​definit definit('_SIZE', 'Size'); // dimensiunea fontului
+- definit definit('_FONT', 'Font'); // familie de fonturi
+- definit definit('_COLOR', 'Culoare'); // culoarea fontului
+
+htdocs/install/language/english/install.php
+- adăugat define('ERR_COPY_CONFIG_FILE', 'Nu s-a putut copia fișierul de configurare %s');
+
+htdocs/install/language/english/welcome.php
+- Versiunile recomandate PHP și MySQL au fost modificate, linkurile au fost modificate în „https:”
+
+htdocs/modules/system/language/english/admin/preferences.php
+- definit definit('_MD_AM_SMTPHOSTDESC', „Fie un singur nume de gazdă, fie mai multe nume de gazdă delimitate prin punct și virgulă.<br>De asemenea, puteți specifica un port diferit pentru fiecare gazdă utilizând acest format: [nume gazdă:port] (de exemplu, „smtp1.example.com:25;example.com”), de asemenea, puteți cripta. tastați, de exemplu: (de ex. „tls://smtp1.example.com:587;ssl://smtp2.example.com:465”).<br>Gazdele vor fi încercate în ordine.’);
+
+htdocs/modules/system/language/english/help/blocksadmin.html
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- definit definit('_AM_SYSTEM_MODULES_ADMIN', 'Administrare modul XOOPS');
+
+FIȘIERE NOI:
+htdocs/themes/xswatch4/language/english/main.php
+A început ca copie a xswatch/language/english/main.php apoi:
+- adăugat define('THEME_TOOLBAR_DEBUGMODE', 'Debug Mode');
+- adăugat define('THEME_TOOLBAR_THIS_MODULE', 'Acest modul');
+- adăugat define('THEME_PERMISSIONS_LEGEND', 'Permisiuni & Legend');
+- adăugat define('THEME_INBOX_ALERT', 'PM Alert');
+- a adăugat define('THEME_INBOX_LINK', 'Faceţi clic aici pentru a vizualiza Mesaje primite!');
+- adăugat define('THEME_EVENT_DOWNLOADS', 'Event Downloads');
+- ​​adăugat define('THEME_FILE_NAME', 'File');
+- adăugat define('THEME_FILE_SIZE', 'Size');
+- adăugat define('THEME_CONTROL_NEXT', 'Next');
+- adăugat define('THEME_CONTROL_PREVIOUS', 'Previous');
+
+htdocs/language/english/user.php
+- adăugat define('_US_DESCRIPTIONMIN', 'Lungime minimă necesară: %s');
+- adăugat define('_US_DESCRIPTIONMAX', 'Lungime maximă: %s');
+
+htdocs/modules/system/language/english/admin/mailusers.php
+- adăugat define('_AM_SYSTEM_MAILUSERS_MAILTAGS5', '{X_NAME} va tipări numele sau uname dacă este gol');
+
+htdocs/modules/system/language/english/admin/images.php
+- added define("_AM_SYSTEM_IMAGES_SCATDELNG","Nu se poate șterge această categorie");
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- ​​adăugat define('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', 'Acest Admin Modul');
+
+FIȘIERE ȘTERSE:
+htdocs/modules/system/language/english/admin/users.php
+- deleted define('_AM_SYSTEM_USERS_MODIFYUSER', 'Modify User');
+- deleted define('_AM_SYSTEM_USERS_DELUSER', 'Delete User');
+- deleted define('_AM_SYSTEM_USERS_GO', 'Go!');
+
+================================
+29/04/2019: Versiunea 2.5.10 finală
+================================
+DEFINIȚII ADAUGATE/ȘTERSE:
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- adăugat define('_AM_LABEL_BAN_BY_IP', 'Ban the IPs on checked records:');
+- a adăugat define('_AM_BUTTON_BAN_BY_IP', 'IP Ban!');
+- adăugat define('_AM_JS_BANCONFIRM', 'IP Bans OK?');
+- adăugat define('_AM_MSG_BANNEDIP', 'IP-urile sunt interzise');
+- adăugat define('_AM_ADMINSTATS_TITLE', 'Rezumatul jurnalului protector');
+
+htdocs/xoops_lib/modules/protector/language/english/modinfo.php
+- adăugat define($constpref . '_ADMINSTATS', 'Prezentare generală');
+- ​​adăugat define($constpref . '_BANIP_TIME0DSC', 'Timp de suspendare în secunde pentru interzicerea IP automată');
+
+htdocs/language/english/uploader.php
+- adăugat define('_ER_UP_INDEXNOTSET', 'Încercare de a prelua mai multe fișiere, trebuie setat indexul.');
+
+htdocs/language/english/admin.php
+- added define('_AD_WARNING_OLD_PHP', 'AVERTISMENT: Luați în considerare actualizarea la o versiune mai nouă de PHP. Versiunea %s sau mai nouă este recomandată și va fi necesară în versiunile XOOPS viitoare.');
+
+DEFINIȚII SCHIMBATE
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- define('_AM_TXT_HOWTOCHANGEDB',"Dacă doriți să schimbați prefixul,<br> editați manual %s/data/secure.php.<br><br>define('XOOPS_DB_PREFIX', '<b>%s</b>');");
+
+htdocs/install/english/welcome.php
+- versiunea PHP recomandată a fost schimbată, a adăugat secțiunea Note speciale pentru SELinux
+
+/home/richard/sites/x258i/htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- în definirea lui „_AM_MODULEADMIN_ADMIN_FOOTER”, linkurile XOOPS au fost modificate în „https://xoops.org'
+
+FIȘIERE NOI:
+n/a
+
+===============================
+01/08/2017: Versiunea 2.5.9 finală
+===============================
+DEFINIȚII ADAUGATE/ȘTERSE
+
+htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- adăugat define('_AM_MODULEADMIN_ABOUT_AMOUNT', 'Suma');
+- adăugat define('_AM_MODULEADMIN_ABOUT_AMOUNT_TTL', 'Vă rugăm să introduceţi suma USD, de exemplu, 25,00 USD');
+- adăugat define('_AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY', 'USD');
+- adăugat define('_AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED', '25.00');
+- adăugat define('_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN', '\\$?[0-9]+(,[0-9]{3})*(\\.[0-9]{0,2})?$');
+- adăugat define('_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT', 'Donează folosind PayPal sau un card de credit important online!');
+
+htdocs/install/language/english/install.php
+*NOTĂ* Programul de instalare a fost modificat în mod semnificativ, așa că acest fișier ar trebui examinat îndeaproape
+- adăugat define("CURL_HTTP", "Bibliotecă URL client (cURL)");
+- adăugat define('XOOPS_COOKIE_DOMAIN_LABEL', 'Domeniu cookie pentru site-ul web');
+- a adăugat define('XOOPS_COOKIE_DOMAIN_HELP', 'Domeniu pentru a seta module cookie. Poate fi necompletat, gazda completă de la adresa URL (www.example.com) sau domeniul înregistrat fără subdomenii (example.com) pentru a partaja subdomeniile (www.example.com și blog.example.com.)');
+- adăugat define('INTL_SUPPORT', 'Funcţii de internaţionalizare');
+- adăugat define('XOOPS_SOURCE_CODE', "XOOPS pe GitHub");
+- adăugat define('XOOPS_INSTALLING', 'Installing');
+- adăugat define('XOOPS_ERROR_ENCOUNTERED', 'Eroare');
+- adăugat define('XOOPS_ERROR_SEE_BELOW', 'Vezi mai jos pentru mesaje.');
+- ​​adăugat define('MODULE_AVAILABLE', 'Module disponibile');
+- adăugat define('INSTALARE_ACEST_MODUL', 'Adăugare %s');
+
+htdocs/install/language/english/finish.php
+- modificați pentru a trimite utilizatori noi la xoops.org pentru informații despre module și teme
+
+htdocs/language/english/global.php
+- adăugat define('_UPLOAD', 'Upload');
+- adăugat define('_SELECTFILES', 'Select files');
+- s-a adăugat define('_DROPFILESHERE', 'Arlasarea fișierelor aici');
+- adăugat define('_RETRY', 'Reîncercaţi');
+- adăugat define('_OK', 'Ok');
+- a adăugat define('_FORMATPROGRESS', '{percent}% of {total_size}');
+- ​​adăugat define('_FAILUPLOAD', 'Încărcarea eşuată!');
+- adăugat define('_WAITINGFORRESPONSE', 'Se procesează...');
+- adăugat define('_PAUSED', 'Paused');
+- a adăugat define('_PROCESSINGDROPPEDFILES', 'Se procesează fișierele abandonate...');
+- a adăugat define('_TYPEERROR', '{fişierul} are o extensie nevalidă. Extensii valide: {extensii}!');
+- a adăugat define('_SIZEERROR', '{file} este prea mare, dimensiunea maximă a fişierului este {sizeLimit}!');
+- s-a adăugat define('_MINSIZEERROR', '{fișierul} este prea mic, dimensiunea minimă a fișierului este {minSizeLimit}!');
+- a adăugat define('_EMPTYERROR', '{fişierul} este gol, vă rugăm să selectaţi din nou fişierele fără el!');
+- ​​adăugat define('_NOFILESERROR', 'Fără fișiere de încărcat!');
+- adăugat define('_TOOMANYITEMSERROR', 'Ar fi încărcat prea multe articole ({netItems}). Limita de articole este {itemLimit}!');
+- a adăugat define('_MAXHEIGHTIMAGEERROR', 'Imaginea este prea înaltă!');
+- a adăugat define('_MAXWIDTHIMAGEERROR', 'Imaginea este prea largă!');
+- a adăugat define('_MINHEIGHTIMAGEERROR', 'Imaginea nu este suficient de înaltă!');
+- a adăugat define('_MINWIDTHIMAGEERROR', 'Imaginea nu este suficient de largă!');
+- adăugat define('_RETRYFAILTOOMANYITEMS', 'Reîncercarea eșuată - ați atins limita de fișiere!');
+- ​​added define('_ONLEAVE', 'Fișierele sunt în curs de încărcare, dacă pleci acum, încărcarea va fi anulată!');
+- added define('_UNSUPPORTEDBROWSERIOS8SAFARI', 'Eroare irecuperabilă - acest browser nu permite încărcarea de fișiere de nici un fel din cauza erorilor grave în iOS8 Safari. Vă rugăm să utilizați iOS8 Chrome până când Apple rezolvă aceste probleme!');
+
+htdocs/language/english/uploader.php
+- adăugat define('_ER_UP_INISIZE', 'Fișierul încărcat depășește directiva upload_max_filesize în php.ini');
+- adăugat define('_ER_UP_FORMSIZE', 'Fișierul încărcat depășește directiva MAX_FILE_SIZE care a fost specificată în formularul HTML');
+- added define('_ER_UP_PARTIAL', 'Fișierul încărcat a fost încărcat doar parțial');
+- adăugat define('_ER_UP_NOFILE', 'Nu a fost încărcat niciun fișier');
+- adăugat define('_ER_UP_NOTMPDIR', 'Lipsește un folder temporar');
+- adăugat define('_ER_UP_CANTWRITE', 'Eșuat la scrierea fișierului pe disc');
+- adăugat define('_ER_UP_EXTENSION', 'Încărcarea fișierului oprită de extensie. Vizualizați phpinfo()');
+- adăugat define('_ER_UP_UNKNOWN', 'Eroare de încărcare necunoscută');
+
+htdocs/language/english/user.php
+- ​​deleted define('_US_USECOOKIE', 'Stochează numele meu de utilizator într-un cookie timp de 1 an');
+
+htdocs/modules/profile/language/english/admin.php
+- added define('_PROFILE_AM_CANNOTDEACTIVATEWEBMASTERS', 'Nu poți dezactiva contul de webmaster');
+
+htdocs/modules/system/language/english/admin/comments.php
+- adăugat define('_MP_DELETECOUNT', 'Numărul de membri ai grupului este prea mare (> 4.000) ');
+
+htdocs/modules/system/language/english/admin/userrank.php
+- adăugat define('_AM_SYSTEM_USERRANK_ERROR', 'Erori');
+
+upgrade/language/english/upgrade.php
+- adăugat define('_LANGUAGE', 'Language');
+- adăugat define('_SUPPORT', 'Support');
+- adăugat define('_XOOPS_SOURCE_CODE', 'XOOPS pe GitHub');
+- adăugat define('_PATCH_COUNT', 'Seturi de corecții');
+- adăugat define('_USERNAME_PLACEHOLDER', 'Numele dvs. de utilizator');
+- adăugat define('_PASSWORD_PLACEHOLDER', 'Parola ta');
+- adăugat define('_CONTINUE', 'Continuare');
+- adăugat define('XOOPS_ERROR_ENCOUNTERED', 'Eroare');
+- adăugat define('XOOPS_ERROR_SEE_BELOW', 'Vezi mai jos pentru mesaje.');
+
+htdocs/themes/xbootstrap/language/english/main.php
+- adăugat define("THEME_USER_WELCOME", "Bun venit");
+
+FIȘIERE NOI:
+- htdocs/modules/system/themes/transition/language/english/admin.php
+- htdocs/modules/system/themes/transition/language/english/localsupport.php
+
+- upgrade/limba/engleză/
+*NOTĂ* Codul de actualizare a fost modificat semnificativ, așa că aceste fișiere ar trebui examinate îndeaproape
+- a mutat toate fișierele de limbă per patch din directoarele de corecție la upgrade/language/*
+  , adică upgrade/upd-2.0.18-to-2.3.0/language/english.php a devenit
+  upgrade/language/english/upd-2.0.18-to-2.3.0.php
+
+- upgrade/language/english/support.php (la fel ca htdocs/install/language/english/support.php)
+- upgrade/language/english/welcome.php
+
+===============================
+27/05/2016: Versiunea 2.5.8
+===============================
+DEFINIȚII ADAUGATE/ȘTERSE
+
+/install/language/english/install.php
+/modules/system/language/english/admin/modulesadmin.php
+- adăugat define('_AM_SYSTEM_MODULES_INSTALL_MORE',"Instalează mai multe module");
+
+/modules/system/language/english/admin/users.php
+define('_AM_SYSTEM_USERS_ACTIVATE', 'Activare utilizator');
+
+/modules/system/language/english/blocks.php
+define('_MB_SYSTEM_BLOCK_HEIGHT',"Înălțimea blocului (linii)");
+
+install/language/english/install.php
+define('CHMOD_CHGRP_REPEAT', 'Reîncercați');
+define('CHMOD_CHGRP_IGNORE', 'Foloseste oricum');
+define('CHMOD_CHGRP_ERROR', 'Este posibil ca instalatorul să nu poată scrie fișierul de configurare %1$s.<p>PHP scrie fișiere sub utilizatorul %2$s și grupul %3$s.<p>Darantul
+
+DEFINIȚII SCHIMBATE
+xoops_lib/modules/protector/language/english/modinfo.php
+define($constpref . '_HIJACK_TOPBITDSC',...
+
+/modules/system/themes/default/language/english/admin.php
+define('_OXYGEN_CODESVN', 'Depozitul de coduri');
+
+install/language/english/install.php
+define('SAVED_MAINFILE', 'Setări salvate');
+define('ERR_NEED_WRITE_ACCESS', 'Serverului trebuie să i se acorde acces de scriere la următoarele fișiere și foldere<br />(adică <em>chmod 775 directory_name</em> pe un server UNIX/LINUX)<br />Dacă nu sunt disponibile sau nu sunt create corect, creați manual și setați permisiunea corespunzătoare.');
+define('ERR_COPY_MAINFILE', 'Nu s-a putut copia fișierul de distribuție în %s');
+define('ERR_WRITE_MAINFILE', 'Nu s-a putut scrie în %s. Verificați permisiunea fișierului și încercați din nou.');
+define('ERR_READ_MAINFILE', 'Nu s-a putut deschide %s pentru citire');
+
+/modules/system/themes/zetadigme/language/english/admin.php
+define('_MD_CODESVN', 'Arhivă de coduri');
+
+FIȘIERE NOI:
+/language/english/stopwords.php
+/language/english/xmf.php
+
+ACTUALIZAT Exemplu de clasă XoopsMailerLocal:
+htdocs/language/english/xoopsmailerlocal.php
+
+===============================
+2014/06/14: Versiunea 2.5.7 finală
+===============================
+DEFINIȚII ADAUGATE/ȘTERSE
+
+/install/language/english/install.php
+- a adăugat define('WRITTEN_LICENSE',"Written XOOPS %s License Key: <strong>%s</strong>");
+
+===============================
+2014/03/18: Versiunea 2.5.7 RC1
+===============================
+DEFINIȚII ADAUGATE/ȘTERSE
+
+/modules/system/language/english/admin.php
+- adăugat define('_AM_SYSTEM_USAGE',"Utilizare");
+- adăugat define('_AM_SYSTEM_ACTIVE',"Activ");
+
+
+===============================
+2012/04/15: Versiunea 2.5.5
+===============================
+DEFINIȚII ADAUGATE/ȘTERSE
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- adăugat define("_AM_MODULEADMIN_HOME", "Acasă");
+- adăugat define("_AM_MODULEADMIN_DASHBOARD", "Tabloul de bord");
+- adăugat define("_AM_MODULEADMIN_DESP", "Despre");
+- adăugat define("_AM_MODULEADMIN_PERMISSIONS", "Permisiuni");
+- adăugat define("_AM_MODULEADMIN_ABOUT_RELEASEDATE","Emis: ");
+- adăugat define("_AM_MODULEADMIN_ABOUT_AUTHOR","Autor: ");
+- adăugat define("_AM_MODULEADMIN_ABOUT_CREDITS","Credite: ");
+- adăugat define("_AM_MODULEADMIN_ABOUT_LICENSE","Licență: ");
+- adăugat define("_AM_MODULEADMIN_ABOUT_AUTHOR_NAME","Numele autorului: ");
+- adăugat define("_AM_MODULEADMIN_ABOUT_AUTHOR_INFO","Informații despre autor");
+- a adăugat define("_AM_MODULEADMIN_ADMIN_FOOTER", "<div class='center smallsmall italic pad5'>Acest modul este întreținut de <a class='tooltip' rel='external' href='http://xoops.org/' title='Vizitează Comunitatea XOOPS'>XOOPS Community'>XOOPS'>XOOPS");
+
+/language/english/calendar.php
+- adăugat define("_CAL_FORMAT","Y-m-d");
+
+/xoops_lib/modules/protector/language/english/modinfo.php
+
+- adăugat define($constpref."_ADMINHOME","Acasă");
+- adăugat define($constpref."_ADMINABOUT","Despre");
+- adăugat define($constpref.'_STOPFORUMSPAM_ACTION','Stop Forum Spam');
+- adăugat define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Verifică datele POST față de spammerii înregistrați pe baza de date www.stopforumspam.com. Necesită php CURL lib.');
+
+
+/install/language/english/install.php
+- adăugat define( "FILTER_FUNCTIONS", "Filter functions");
+
+/language/english/global.php
+- adăugat define('_DBDATESTRING', 'Y-m-d');
+- adăugat define('_DBTIMESTRING', 'H:i:s');
+- adăugat define('_DBTIMESTAMPSTRING', 'Y-m-d H:i:s');
+
+/language/english/pmsg.php
+- adăugat define('_PM_READ', 'Deja citit');
+
+/modules/system/language/english/admin.php
+- adăugat define("_AM_SYSTEM_UNINSTALL","Dezinstalare");
+
+VEZI ȘI:
+/modules/profile/docs/lang_diff.txt
+
+===============================
+2011/11/17: Versiunea 2.5.4
+===============================
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+_AM_MODULEADMIN_CONFIG_DB
+_AM_MODULEADMIN_CONFIG_ADMIN
+
+===============================
+10/10/2011: versiunea 2.5.4 RC
+===============================
+
+FIȘIERE NOI:
+modules/pm/language/english/help/help.html
+modules/profile/language/english/help/help.html
+modules/protector/language/english/help/help.html
+
+DEFINIȚII ADAUGATE/ȘTERSE
+
+/language/english/pmsg.php
+delete define('_PM_READ', 'Deja citit');
+
+/language/english/user.php
+- adăugat define('_US_SKYPE', 'Skype');
+- adăugat define('_US_FACEBOOK', 'Facebook');
+
+/modules/pm/language/english/main.php
+- deleted define("_PM_RECEIVE","RECEIVE");
+- deleted define("_PM_POST","POST");
+- deleted define("_PM_READBOX","READBOX");
+- deleted define("_PM_RSAVEBOX","Receive_SAVEBOX");
+- deleted define("_PM_SENTBOX","SENTBOX");
+- definește șters("_PM_PSAVEBOX","Post_SAVEBOX");
+- deleted define("_PM_SAVED","Salvat cu succes");
+- deleted define("_PM_TOC","De la: ");
+- deleted define("_PM_UID","ID-ul expeditorului");
+
+/language/english/findusers.php
+- adăugat define('_MA_USER_FACEBOOK', 'Facebook Link'); //DE FACE
+- a adăugat define('_MA_USER_SKYPE', 'Skype Link');//DE FĂCUT
+
+/modules/pm/language/english/modinfo.php
+- adăugat define("_PM_MI_DESP", "Despre");
+
+/modules/profile/language/english/admin.php
+- adăugat define('_PROFILE_AM_ACTION', 'Acţiune');
+
+/modules/profile/language/english/modinfo.php
+- adăugat define("_PROFILE_MI_DESPRE", "Despre");
+- adăugat define("_PROFILE_MI_HOME", "Acasă");
+
+
+/modules/system/language/english/admin/preferences.php
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_GENERAL","Setări generale");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_USERSETTINGS","Setări informații despre utilizator");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_METAFOOTER","Meta tag-uri și subsol");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_CENSOR","Opțiuni de cenzură cuvinte");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_SEARCH","Opțiuni de căutare");
+- ​​deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_MAILER","Configurare e-mail");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_AUTHENTICATION","Opțiuni de autentificare");*/
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_GENERAL","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_USERSETTINGS","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_METAFOOTER","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_CENSOR","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_SEARCH","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_MAILER","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_AUTHENTICATION","A faire");
+- definește șters("_MD_AM_LOADINGIMG", "Afișează imaginea de încărcare...?");
+- deleted define("_MD_AM_CHNGUTHEME", "Schimbați tema tuturor utilizatorilor");
+
+/modules/system/language/english/admin/users.php
+- added define("_AM_SYSTEM_USERS_ACCEPT_EMAIL","Acceptare e-mail de la administrator");
+
+- deleted define("_AM_SYSTEM_USERS_NAV_MANAGER","Manager utilizatori");
+- deleted define("_AM_SYSTEM_USERS_USERPOST","Postări utilizator");
+- deleted define("_AM_SYSTEM_USERS_STORIES","Povești");
+- deleted define("_AM_SYSTEM_USERS_COMMENTS","Comentarii");
+- deleted define("_AM_SYSTEM_USERS_PTBBTSDIYT","Apăsați butonul de mai jos pentru a sincroniza datele dacă credeți că informațiile postate de utilizator de mai sus nu par să indice starea reală");
+- deleted define("_AM_SYSTEM_USERS_CNGTCOM","Nu s-a putut obține totalul de comentarii");
+- deleted define("_AM_SYSTEM_USERS_CNGTST","Nu s-a putut obține totalul poveștilor");
+- deleted define("_AM_SYSTEM_USERS_LIST","Lista");
+- deleted define("_AM_SYSTEM_USERS_USERPOST","Postări utilizator");
+- deleted define("_AM_SYSTEM_USERS_STORIES","Povești");
+- deleted define("_AM_SYSTEM_USERS_COMMENTS","Comentarii");
+- deleted define("_AM_SYSTEM_USERS_PTBBTSDIYT","Apăsați butonul de mai jos pentru a sincroniza datele dacă credeți că informațiile postate de utilizator de mai sus nu indică starea reală");
+- deleted define("_AM_SYSTEM_USERS_CNGTCOM","Nu s-au putut obține toate comentariile");
+- deleted define("_AM_SYSTEM_USERS_CNGTST","Nu s-au putut obține toate poveștile");
+- deleted define("_AM_SYSTEM_USERS_LIST","Lista");
+
+xoops_lib/modules/protector/language/english/admin.php
+- adăugat define("_AM_ADV_REGISTERGLOBALS2","și plasează în el linia de mai jos:");
+
+FIȘIERE SCHIMBATE:
+
+/modules/system/language/english/admin/users.php (Mamba)/
+/language/english/mail_template/activated.tpl
+/language/english/mail_template/adminactivate.tpl
+/language/english/mail_template/lostpass1.tpl
+/language/english/mail_template/lostpass2.tpl
+/language/english/mail_template/register.tpl
+/language/english/mail_template/welcome.tpl
+/modules/system/language/english/admin/avatars.php
+/modules/system/language/english/admin/banners.php
+/modules/system/language/english/admin/blocksadmin.php
+/modules/system/language/english/admin/comments.php
+/modules/system/language/english/admin/preferences.php
+/modules/system/language/english/admin/userrank.php
+/modules/system/language/english/admin/users.php
+/modules/system/language/english/help/mailusers.html
+/modules/system/language/english/help/preferences.html
+/modules/system/language/english/admin.php
+/modules/system/language/english/blocks.php
+/modules/system/language/english/modinfo.php
+/modules/system/themes/default/language/english/admin.php
+/modules/system/themes/zetadigme/language/english/admin.php
+/themes/suico/language/english/main.php
+/themes/zetagenesis/language/english/main.php
+
+
+===============================
+05/10/2011: Versiunea 2.5.4 Beta
+===============================
+- a actualizat mai multe traduceri în engleză (DCrussader/Mamba)
+- limbă/engleză/calendar.php ștearsă _CAL_DEF_DATE_FORMAT
+- limbă/engleză/calendar.php ștearsă _CAL_TT_DATE_FORMAT
+- module/system/language/english/admin/users.php șterse _AM_SYSTEM_USERS_NAV_MANAGER
+- module/system/language/english/admin/preferences.php șterse _MD_AM_LOADINGIMG
+- module/system/language/english/admin/preferences.php șterse _MD_AM_CHNGUTHEME
+- modulele/pm/language/english/admin/main.php șterse _PM_RECEIVE, _PM_POST, _PM_READBOX, _PM_RSAVEBOX, _PM_SENTBOX, _PM_PSAVEBOX, _PM_SAVED, _PM_TOC
+- adăugat /modules/profile/language/english/admin.php _PROFILE_AM_ACTION
+- adăugat /modules/profile/language/english/main.php _PROFILE_MI_ABOUT
+- adăugat /modules/profile/language/english/main.php _PROFILE_MI_HOME
+- adăugat /modules/pm/language/english/modinfo.php _PM_MI_ABOUT
+- module/system/language/english/admin/users.php adăugate _AM_SYSTEM_USERS_FACEBOOK, _AM_SYSTEM_USERS_SKYPE
+- a adăugat limba/engleză/user.php _US_SKYPE, _US_FACEBOOK
+
+xoops_lib/modules/protector/language/english/modinfo.php
+- adăugat define($constpref.'_STOPFORUMSPAM_ACTION','Stop Forum Spam');
+- adăugat define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Verifică datele POST față de spammerii înregistrați pe baza de date www.stopforumspam.com. Necesită php CURL lib.');
+
+
+
+===============================
+06/09/2011: versiunea 2.5.2 RC
+===============================
+ - a adăugat limba/engleză/misc.php _MSC_CLICK_TO_OPEN_IMAGE, _MSC_RESIZED_IMAGE, _MSC_ORIGINAL_IMAGE
+ - a adăugat limba/engleză/pmsg.php _PM_SURE_TO_DELETE, _PM_READ
+ - module adăugate/pm/language/english/admin/main.php _PM_READ, _PM_SUBJECT_ICONS
+ - modules\system/language/english/admin/tplsets.php _AM_SYSTEM_TEMPLATES_SET
+ - module/system/themes/default/language/english/admin/admin.php eliminate _OXYGEN_XOOPSENGINE
+ - module/system/language/english/admin/blocksadmin.php eliminate _AM_SYSTEM_BLOCKS_SAVE
+ - adăugată limbă/engleză/calendar.php _CAL_DEF_DATE_FORMAT
+ - adăugată limbă/engleză/calendar.php _CAL_TT_DATE_FORMAT
+
+===============================
+2011/03/15: Versiunea 2.5.1 RC
+===============================
+
+Au adăugat constante de limbă:
+  modules/system/language/english/admin/images.php _AM_SYSTEM_IMAGES_URL
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+
+Constante de limbaj modificate:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_ABOUT_TEXT, _OXYGEN_WEBSITE
+  modules/system/language/english/helper/help_center.html, modulesadmin.html
+
+S-au eliminat constantele limbajului:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_GEN_SOURCEFORCE_
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_GEN_SOURCEFORCE_

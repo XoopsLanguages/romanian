@@ -1,0 +1,60 @@
+<div class="outer" id="help-template">
+<h1 class="head">Ajutor: Preferințe</h1>
+<h4 class="odd">Descriere</h4>
+<p class="even">
+        Panourile de preferințe sunt unde vă configurați preferințele la nivel de site. Merită să vă acordați timp pentru a le rezolva, deoarece unele setări pot avea un impact semnificativ asupra performanței, securității și ușurinței de utilizare a site-ului dvs.
+    </p>
+<h4 class="odd">Setări generale</h4>
+<p class="even">
+        Acestea sunt cele mai importante și mai frecvent accesate preferințe. Veți seta numele site-ului și sloganul pentru site-ul dvs. Veți selecta, de asemenea, tema implicită și GUI de administrare. Și dacă trebuie să lucrați pe site-ul dvs., îl puteți închide pentru toți utilizatorii. De asemenea, puteți seta cache la nivelul întregului modul
+        ori.
+    </p>
+<h4 class="odd">Meta-etichete și subsol</h4>
+<p class="even">
+        Metaetichetele oferă informații despre informațiile dvs. – ele descriu natura site-ului dvs. Utilizarea lor principală este de a ajuta motoarele de căutare și roboții lor să indexeze corect site-ul dvs. web, adică să ajute oamenii potriviți să-l găsească. Informațiile pe care le furnizați sunt incluse în antetul fiecărui web
+        pagina. Ar trebui să reprezinte conținutul site-ului ca întreg - metainformația este aceeași pe fiecare pagină, momentan nu poate fi personalizată pentru module sau pagini diferite.<br/><br/>
+
+        Rețineți că motoarele de căutare majore folosesc strategii diferite pentru indexarea site-urilor web. Ei pot plasa ponderi diferite pe metaetichete sau chiar le pot ignora complet. Utilizarea atentă a meta informațiilor poate ajuta site-ul dvs. să obțină o poziție mai bună în motoarele de căutare și este util să căutați
+        informații despre strategiile de indexare ale referrerilor dvs. dominanti (consultați fișierul jurnal al site-ului dvs. web). Acest lucru vă poate ajuta să vă optimizați meta informațiile sau alte aspecte ale designului și conținutului site-ului dvs. pentru a vă îmbunătăți clasamentul. <br/><br/>
+
+        Încercați să fiți precis și onest în furnizarea de meta informații. Nu încerca să ‘<em>manipulează</em>’ motoarele de căutare pentru a obține o clasare mai bună – acestea pot recunoaște acest comportament, iar site-ul dvs. poate fi retrogradat sau trecut pe lista neagră din indexul lor.
+
+        <br/><br/>The <strong>Meta Copyright</strong> și <strong>Subsol</strong> ambele câmpuri acceptă două etichete de înlocuire pentru a simplifica întreținerea.
+        <br/> - <strong>{X_SITEURL}</strong> va fi înlocuit cu adresa URL completă a paginii principale a site-ului dvs.
+        <br/> - <strong>{X_YEAR}</strong> va fi înlocuit cu anul curent cu patru cifre. Elimină necesitatea de a actualiza în fiecare an data superioară a drepturilor de autor.
+    </p>
+<h4 class="odd">Opțiuni de cenzură a cuvintelor</h4>
+<p class="even">
+        XOOPS poate cenzura automat cuvintele nedorite care pot fi postate de vizitatorii site-ului dvs. și le poate înlocui cu un termen generic, alternativ, la alegerea dvs. Funcția de cenzură consumă unele resurse de sistem și poate încetini oarecum site-ul dvs. Este dezactivat implicit.<br/><br/>
+
+        Pentru a implementa cenzura pe site-ul dvs., selectați „<em>activați</em>’. Trebuie să introduceți o listă de cuvinte nedorite în „<em>cuvinte de cenzurat</em>’, separându-le cu caracterul pipe. Această funcție nu face distincție între majuscule și minuscule. Introduceți un termen de înlocuire adecvat în „
+Butonul<em>înlocuiți
+            cuvinte proaste cu</em>’ caseta. Valoarea implicită este #OOPS#.
+
+    </p>
+<h4 class="odd">Opțiuni de căutare</h4>
+<p class="even">
+        Facilitatea de căutare este unul dintre cele mai importante instrumente de localizare a informațiilor într-un site web portal. Căutarea XOOPS clasifică rezultatele după modul – înregistrările sunt identificate ca știri, descărcări, link-uri sau alte tipuri conform modulelor pe care le-ați instalat. <br/><br/>
+
+        Căutările globale ale tuturor resurselor de pe site-ul dvs. sunt activate în mod implicit. Dacă dezactivați căutările globale, această facilitate nu va mai fi disponibilă și blocul de căutare va deveni nefuncțional.
+        Lungimea minimă implicită a cuvântului cheie pentru căutări este de cinci caractere. Orice termeni care sunt mai scurti vor fi ignorați. Acest lucru este util pentru controlul preciziei căutărilor, deși nu este foarte folositor pentru termeni precum „hartă site-ului”. Cuvintele cheie scurte tind să fie mai frecvente, așa că tind să returneze o valoare mai mare
+        numărul de înregistrări, dintre care multe pot fi irelevante. Cuvintele cheie mai lungi tind să preia mai puține înregistrări, dar cu un grad mai mare de precizie.<br/><br/>
+
+        Căutarea este relativ costisitoare în termeni de calcul și, prin urmare, excluderea termenilor scurti va reduce sarcina pe server. Cu toate acestea, rețineți că uneori este util să puteți căuta pe termen scurt.
+
+    </p>
+<h4 class="odd">Configurare e-mail</h4>
+<p class="even">
+        Această secțiune a panoului de control este utilizată pentru a vă configura e-mailul pentru sistem. Se recomandă să lăsați Metoda de livrare prin e-mail la setarea implicită „PHP (mail)”. Nu trebuie să completați câmpurile Sendmail sau SMTP decât dacă utilizați o opțiune alternativă de livrare a e-mailului.
+    </p>
+<h4 class="odd">Opțiuni de autentificare</h4>
+<p class="even">
+        Lăsați-l la Xoops Database și puteți ignora toate celelalte opțiuni de acolo.<br/><br/>
+
+        Serverele LDAP sau Microsoft Active Directory au fost adăugate pentru autentificare ca alternativă la utilizatorii obișnuiți Xoops. Motivul este că în multe companii aveți deja o bază de date de utilizatori în ADS sau LDAP și o pot folosi pentru a se conecta la XOOPS și nu trebuie să înregistreze încă un alt cont.
+    </p>
+<h4 class="odd">Setări modul de sistem</h4>
+<p class="even">
+        Aici puteți activa/dezactiva fiecare dintre secțiunile de sistem, precum și să specificați setările implicite la nivelul întregului sistem, de ex. pentru numărul de avatare sau imagini afișate pe pagină. De asemenea, puteți selecta un editor implicit pentru blocuri, comentarii și pentru toate modulele.
+    </p>
+</div>
