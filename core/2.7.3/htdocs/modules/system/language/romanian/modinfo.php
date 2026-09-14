@@ -1,0 +1,80 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    ro
+ * _CHARSET     UTF-8
+ */
+define('_MI_SYSTEM_NAME', 'Sistem');
+define('_MI_SYSTEM_DESC', 'Pentru administrarea setărilor de bază ale site-ului.');
+define('_MI_SYSTEM_BNAME2', 'Meniu utilizator');
+define('_MI_SYSTEM_BNAME3', 'Autentificare');
+define('_MI_SYSTEM_BNAME4', 'Caută');
+define('_MI_SYSTEM_BNAME5', 'Conținut în așteptare');
+define('_MI_SYSTEM_BNAME6', 'Meniu principal');
+define('_MI_SYSTEM_BNAME7', 'Info site');
+define('_MI_SYSTEM_BNAME8', 'Cine este online');
+define('_MI_SYSTEM_BNAME9', 'Top postători');
+define('_MI_SYSTEM_BNAME10', 'Membri noi');
+define('_MI_SYSTEM_BNAME11', 'Comentarii recente');
+define('_MI_SYSTEM_BNAME12', 'Opțiuni de notificare');
+define('_MI_SYSTEM_BNAME13', 'Teme');
+define('_MI_SYSTEM_ADMENU1', 'Bannere');
+define('_MI_SYSTEM_ADMENU2', 'Blocuri');
+define('_MI_SYSTEM_ADMENU3', 'Grupuri');
+define('_MI_SYSTEM_ADMENU5', 'Module');
+define('_MI_SYSTEM_ADMENU6', 'Preferințe');
+define('_MI_SYSTEM_ADMENU7', 'Fețe vesele');
+define('_MI_SYSTEM_ADMENU9', 'Ranguri utilizatori');
+define('_MI_SYSTEM_ADMENU10', 'Editează utilizator');
+define('_MI_SYSTEM_ADMENU11', 'Email utilizatori');
+define('_MI_SYSTEM_ADMENU12', 'Găsește utilizatori');
+define('_MI_SYSTEM_ADMENU13', 'Imagini');
+define('_MI_SYSTEM_ADMENU14', 'Avatare');
+define('_MI_SYSTEM_ADMENU15', 'Șabloane');
+define('_MI_SYSTEM_ADMENU16', 'Comentarii');
+define('_MI_SYSTEM_PREFERENCE_BREAK_GENERAL', 'Setări generale');
+define('_MI_SYSTEM_PREFERENCE_TIPS', 'Ajutor online?');
+define('_MI_SYSTEM_PREFERENCE_TIPS_DSC', 'Aceasta vă oferă sfaturi și ajutor online');
+define('_MI_SYSTEM_PREFERENCE_ICONS', 'Pictograme');
+define('_MI_SYSTEM_PREFERENCE_BREADCRUMB', 'Pesmet');
+define('_MI_SYSTEM_PREFERENCE_BREAK_ACTIVE', 'Secțiune activă');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_AVATARS', 'Avatare active');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BANNERS', 'Bannere active');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BLOCKSADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_COMMENTS', 'Comentarii active');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_FILEMANAGER', 'Manager de fișiere activ');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_GROUPS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_IMAGES', 'Manager de imagini active');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAILUSERS', 'Utilizatori activi de e-mail');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MODULESADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_PREFERENCES', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_SMILIES', 'Smilies active');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_TPLSETS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERRANK', 'Ranguri utilizatori active');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERS', 'Utilizatori activi');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAINTENANCE', 'Mentenanță activă');
+define('_MI_SYSTEM_PREFERENCE_BREAK_PAGER', 'Numărul de rânduri de afișat în administrare');
+define('_MI_SYSTEM_PREFERENCE_AVATARS_PAGER', 'Numărul de avatare de afișat pe pagină');
+define('_MI_SYSTEM_PREFERENCE_BANNERS_PAGER', 'Numărul de bannere de afișat pe pagină');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_PAGER', 'Numărul de comentarii de afișat pe pagină');
+define('_MI_SYSTEM_PREFERENCE_GROUPS_PAGER', 'Numărul de grupuri de afișat pe pagină');
+define('_MI_SYSTEM_PREFERENCE_IMAGES_PAGER', 'Numărul de imagini de afișat pe pagină');
+define('_MI_SYSTEM_PREFERENCE_SMILIES_PAGER', 'Numărul de smilies de afișat pe pagină');
+define('_MI_SYSTEM_PREFERENCE_USERRANKS_PAGER', 'Numărul de poziții de afișat pe pagină');
+define('_MI_SYSTEM_PREFERENCE_USERS_PAGER', 'Numărul de utilizatori de afișat pe pagină');
+define('_MI_SYSTEM_PREFERENCE_BREAK_EDITOR', 'Setări editor');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR', 'Editor pentru blocuri:');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR', 'Editor pentru comentarii:');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR', 'Editor pentru toate modulele:');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_ANONPOST', '');
+define('_MI_SYSTEM_PREFERENCE_REDIRECT', '');
+define('_MI_SYSTEM_PREFERENCE_JQUERY_THEME', 'Tema jQuery');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Dezactivare temporară');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'E-mail');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Mesaj privat');
+define('_MI_SYSTEM_MENUS_ACTIVE', 'Activați sistemul de meniu');
+define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Activați sistemul de gestionare a meniurilor încorporat pentru navigarea pe site');
